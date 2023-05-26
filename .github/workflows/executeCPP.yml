@@ -1,0 +1,11 @@
+name: execute cpp file
+
+on: 
+  pull_request:
+
+jobs:
+  execute-cpp-file:
+    runs-on: ubuntu-latest
+    steps:
+      run: g++ Hello.cpp
+      run: ./a.out
