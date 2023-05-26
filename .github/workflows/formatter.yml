@@ -1,0 +1,11 @@
+name: use clang-format
+run-name: clang-format check
+
+on: [push]
+
+jobs:
+  formatter:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: clang-format $(find . -name "*.cpp") --Werror --dry-run
