@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - run: clang-format Hello.cpp -i
+    - run: clang-format Hello.cpp --Werror
