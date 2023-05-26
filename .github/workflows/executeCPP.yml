@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      run: g++ Hello.cpp
-      run: ./a.out
+    - run: g++ Hello.cpp
+    - run: ./a.out
