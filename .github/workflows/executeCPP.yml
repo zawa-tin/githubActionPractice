@@ -7,5 +7,6 @@ jobs:
   execute-cpp-file:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
       run: g++ Hello.cpp
       run: ./a.out
