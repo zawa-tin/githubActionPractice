@@ -1,7 +1,6 @@
 name: execute cpp file
 
-on: 
-  pull_request:
+on: [push]
 
 jobs:
   execute-cpp-file:
