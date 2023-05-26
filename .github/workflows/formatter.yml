@@ -1,5 +1,5 @@
 name: use clang-format
-fun-name: clang-format check
+run-name: clang-format check
 
 on: [push]
 
